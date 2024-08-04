@@ -1,0 +1,23 @@
+# ninja log v6
+2	57	7444498596852365	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	9130cbe20b382e1d
+2	57	7444498596852365	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	9130cbe20b382e1d
+3	27741	7444504363134168	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7f10146e0ba73c18
+3	27741	7444504363134168	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	7f10146e0ba73c18
+27741	27797	7444504363680065	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	5a5ce09e8662115c
+3	27741	7444504363134168	raylib-populate-prefix/src/5.0.tar.gz	7f10146e0ba73c18
+3	27741	7444504363134168	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/5.0.tar.gz	7f10146e0ba73c18
+28053	28130	7444504367025850	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	f91612aba8d7d401
+27797	27851	7444504364239035	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	fe59aa2450b05122
+27741	27797	7444504363680065	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	5a5ce09e8662115c
+27797	27851	7444504364239035	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	fe59aa2450b05122
+27851	27901	7444504364737403	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	491de59e28532362
+27851	27901	7444504364737403	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	491de59e28532362
+27902	27952	7444504365251095	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	4793353970286d6c
+27902	27952	7444504365251095	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	4793353970286d6c
+27952	28003	7444504365749440	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	a5107fb4b5d4fae9
+27952	28003	7444504365749440	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	a5107fb4b5d4fae9
+28003	28053	7444504366253473	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	8da634751ff5ac0b
+28003	28053	7444504366253473	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	8da634751ff5ac0b
+28053	28130	7444504367025850	CMakeFiles/raylib-populate-complete	f91612aba8d7d401
+28053	28130	7444504367025850	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	f91612aba8d7d401
+28053	28130	7444504367025850	C:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	f91612aba8d7d401
