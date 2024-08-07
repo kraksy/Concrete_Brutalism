@@ -44,6 +44,13 @@ typedef struct {
     Texture2D texture;
 }Entity;
 
+typedef struct {
+    Model model;
+    Vector3 pos;
+    Color color;
+    bool clicked;
+}ButtonObject;
+
 float GetHeightFromTriangle(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 position) {
     float height = (v1.y + v2.y + v3.y) / 3.0f;
     return height;
@@ -85,10 +92,16 @@ int main()
     player.height = PLAYER_EYE_HEIGHT;
     player.isGrounded = false;
 
-    Model map = LoadModel("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\base.obj");
-    Texture2D texture = LoadTexture("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\texture.png");
+    Model map = LoadModel("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\meshes\\base.obj");
+    Texture2D texture = LoadTexture("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\textures\\texture.png");
     map.materials[0].maps[MATERIAL_MAP_DIFFUSE].texture = texture;
     Vector3 pos = {0.0f, 0.0f, 0.0f};
+
+    Model buttonModel = LoadModel("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\meshes\\testing.obj");
+
+    ButtonObject button = { 0 };
+    button.model = buttonModel;
+    button.color = WHITE;
 
     if (map.meshes == NULL) {
         TraceLog(LOG_ERROR, "Failed to load model: %s", "resources/map.obj");
@@ -158,12 +171,26 @@ int main()
         // Update camera position to match player position
         camera.position = (Vector3){ player.pos.x, player.pos.y, player.pos.z };
 
+        Vector3 direction = Vector3Subtract(camera.target, camera.position);
+        Vector3Normalize(direction);
+
+        // Check if the ray from camera to direction intersects with the object
+        Ray ray = { camera.position, direction };
+        RayCollision hitInfo = GetRayCollisionSphere(ray, button.pos, 1.0f);
+
+        if (hitInfo.hit) {
+            button.clicked = true;
+        } else {
+            button.clicked = false;
+        }
+
         BeginDrawing();
             ClearBackground(GRAY);
 
             BeginMode3D(camera);
                     BeginShaderMode(shader);
                     DrawModel(map, pos, 1.0f, WHITE);
+                    DrawModel(button.model,(Vector3){1.0f, 1.0f, 1.0f}, 1.0f, button.clicked ? WHITE : BLACK);
                     EndShaderMode();
             EndMode3D();
         EndDrawing();
