@@ -9,6 +9,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
         src/main.cpp
+        src/inputs.cpp
+        src/include/inputs.h
+        src/TerrainFunctions.cpp
+        src/include/TerrainFunctions.h
+        src/Core.cpp
+        src/include/Core.h
 )
 
 include(FetchContent)

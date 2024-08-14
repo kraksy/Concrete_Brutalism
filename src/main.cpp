@@ -6,6 +6,8 @@
 #include <raylib.h>
 #include "raymath.h"
 
+#include "include/inputs.h"
+
 #if defined(PLATFORM_DESKTOP)
     #define GLSL_VERSION 330
 #else
@@ -17,8 +19,8 @@
 
 #define GRAVITY 9.81f // Gravity force
 #define PLAYER_JUMP_SPEED 4.0f // Jumping speed
-#define PLAYER_SPEED 4.0f // Movement speed
-#define PLAYER_EYE_HEIGHT 1.75f // Player's eye height
+#define PLAYER_SPEED 5.0f // Movement speed
+#define PLAYER_EYE_HEIGHT 2.0f // Player's eye height
 #define CAMERA_SENSITIVITY 0.003f
 
 typedef struct
@@ -80,7 +82,7 @@ int main()
     SetConfigFlags(FLAG_MSAA_4X_HINT);
 
     Camera camera = { 0 };
-    camera.position = (Vector3){ 0.0f, 2.0f, 4.0f };    // Camera position
+    camera.position = (Vector3){ 0.0f, 2.0f, 3.0f };    // Camera position
     camera.target = (Vector3){ 0.0f, 2.0f, 0.0f };      // Camera looking at point
     camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };          // Camera up vector (rotation towards target)
     camera.fovy = 60.0f;                                // Camera field-of-view Y
@@ -111,10 +113,14 @@ int main()
 
     Shader shader = LoadShader(0, TextFormat("C:\\Users\\kraks\\Desktop\\smolgame\\resources\\shader.fs", GLSL_VERSION));
 
-    SetTargetFPS(60);
-
     float pitch = 0.0f; // Vertical rotation angle
     float yaw = 0.0f;   // Horizontal rotation angle
+
+    //setup inputs
+    inputs::InputPreset playerInputs = inputs::setupInputs();
+
+    // basic settings
+    SetTargetFPS(60);
 
     while(!WindowShouldClose())
     {
@@ -176,7 +182,7 @@ int main()
 
         // Check if the ray from camera to direction intersects with the object
         Ray ray = { camera.position, direction };
-        RayCollision hitInfo = GetRayCollisionSphere(ray, button.pos, 1.0f);
+        RayCollision hitInfo = GetRayCollisionSphere(ray, button.pos, 0.1f);
 
         if (hitInfo.hit) {
             button.clicked = true;

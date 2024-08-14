@@ -57,6 +57,30 @@ build CMakeFiles/smolgame.dir/src/main.cpp.obj: CXX_COMPILER__smolgame_unscanned
   OBJECT_DIR = CMakeFiles\smolgame.dir
   OBJECT_FILE_DIR = CMakeFiles\smolgame.dir\src
 
+build CMakeFiles/smolgame.dir/src/inputs.cpp.obj: CXX_COMPILER__smolgame_unscanned_Debug C$:/Users/kraks/Desktop/smolgame/src/inputs.cpp || cmake_object_order_depends_target_smolgame
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\smolgame.dir\src\inputs.cpp.obj.d
+  FLAGS = -Wall -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\smolgame.dir
+  OBJECT_FILE_DIR = CMakeFiles\smolgame.dir\src
+
+build CMakeFiles/smolgame.dir/src/TerrainFunctions.cpp.obj: CXX_COMPILER__smolgame_unscanned_Debug C$:/Users/kraks/Desktop/smolgame/src/TerrainFunctions.cpp || cmake_object_order_depends_target_smolgame
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\smolgame.dir\src\TerrainFunctions.cpp.obj.d
+  FLAGS = -Wall -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\smolgame.dir
+  OBJECT_FILE_DIR = CMakeFiles\smolgame.dir\src
+
+build CMakeFiles/smolgame.dir/src/Core.cpp.obj: CXX_COMPILER__smolgame_unscanned_Debug C$:/Users/kraks/Desktop/smolgame/src/Core.cpp || cmake_object_order_depends_target_smolgame
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\smolgame.dir\src\Core.cpp.obj.d
+  FLAGS = -Wall -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src -IC:/Users/kraks/Desktop/smolgame/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\smolgame.dir
+  OBJECT_FILE_DIR = CMakeFiles\smolgame.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target smolgame
@@ -65,7 +89,7 @@ build CMakeFiles/smolgame.dir/src/main.cpp.obj: CXX_COMPILER__smolgame_unscanned
 #############################################
 # Link the executable smolgame.exe
 
-build smolgame.exe: CXX_EXECUTABLE_LINKER__smolgame_Debug CMakeFiles/smolgame.dir/src/main.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+build smolgame.exe: CXX_EXECUTABLE_LINKER__smolgame_Debug CMakeFiles/smolgame.dir/src/main.cpp.obj CMakeFiles/smolgame.dir/src/inputs.cpp.obj CMakeFiles/smolgame.dir/src/TerrainFunctions.cpp.obj CMakeFiles/smolgame.dir/src/Core.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
   FLAGS = -Wall -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\smolgame.dir
