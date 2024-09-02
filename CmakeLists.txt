@@ -8,13 +8,15 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-        src/main.cpp
+        src/testing.cpp
         src/inputs.cpp
-        src/include/inputs.h
-        src/TerrainFunctions.cpp
-        src/include/TerrainFunctions.h
+        src/inputs.h
         src/Core.cpp
-        src/include/Core.h
+        src/Core.h
+        src/main.cpp
+        src/Game.cpp
+        src/InputHandle.h
+        src/InputHandle.cpp
 )
 
 include(FetchContent)
