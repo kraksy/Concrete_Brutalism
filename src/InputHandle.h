@@ -6,6 +6,7 @@
 #define SMOLGAME_INPUTHANDLE_H
 
 #include <raylib.h>
+#include "raymath.h"
 
 class InputHandle {
 public:

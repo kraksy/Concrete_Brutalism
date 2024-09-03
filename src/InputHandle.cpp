@@ -12,7 +12,7 @@ bool InputHandle::init() {
 }
 
 void InputHandle::HandleInput() {
-    if (IsKeyDown(InputPreset::forward)) InputHandle::moveDirections = Vector3Add(moveDirection, forward);
+    if (IsKeyDown(InputPreset::forward)) InputHandle::moveDirections = Vector3Add( InputHandle::moveDirections, forward);
     if (IsKeyDown(InputPreset::back)) InputHandle::moveDirections = Vector3Subtract(moveDirection, forward);
     if (IsKeyDown(InputPreset::left)) InputHandle::moveDirections = Vector3Subtract(moveDirection, right);
     if (IsKeyDown(InputPreset::right)) InputHandle::moveDirections = Vector3Add(moveDirection, right);
