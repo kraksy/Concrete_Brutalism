@@ -5,25 +5,29 @@
 #ifndef SMOLGAME_INPUTHANDLE_H
 #define SMOLGAME_INPUTHANDLE_H
 
-#include <raylib.h>
+#include "Core.h"
 #include "raymath.h"
+#include <raylib.h>
 
 class InputHandle {
 public:
-    struct InputPreset {
-        static KeyboardKey forward;
-        static KeyboardKey back;
-        static KeyboardKey left;
-        static KeyboardKey right;
-        static KeyboardKey jump;
-        static KeyboardKey interact;
-    };
+  struct InputPreset {
+    static KeyboardKey forward;
+    static KeyboardKey back;
+    static KeyboardKey left;
+    static KeyboardKey right;
+    static KeyboardKey jump;
+    static KeyboardKey interact;
+  };
 
-    static Vector3 moveDirections;
+  static bool grounded;
+  static Vector2 mouseDelta; // mouse data
+  static Vector3 forward;    // for camera walking dir
+  static Vector3 right;      // also camera walking dir
+  static Vector3 moveDirections;
 
-    static bool init();
-    static void HandleInput();
+  static bool init();
+  static void HandleInput();
 };
 
-
-#endif //SMOLGAME_INPUTHANDLE_H
+#endif // SMOLGAME_INPUTHANDLE_H
