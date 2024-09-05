@@ -7,17 +7,26 @@
 
 #include "Core.h"
 
+#include "Camera.h"
 #include "InputHandle.h"
 
 Game::Game() = default;
 Game::~Game() = default;
 
 bool Game::init() {
-  Core::GameConfig::ScreenHeight = 1200;
-  Core::GameConfig::ScreenWidth = 1200;
+  Core::initCore();
+  InputHandle::init();
+  CBCamera::init();
   return true;
 }
 
-void Game::run() {}
+void Game::run() {
+  BeginDrawing();
+  EndDrawing();
+}
 
-void Game::exit() { CloseWindow(); }
+void Game::exit() {
+  CloseWindow();
+  Core::delCore();
+  CBCamera::del();
+}

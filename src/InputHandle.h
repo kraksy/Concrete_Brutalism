@@ -28,6 +28,14 @@ public:
 
   static bool init();
   static void HandleInput();
+
+private:
+  typedef struct MouseInfo {
+    float yaw;
+    float pitch;
+  } info;
+  static MouseInfo getInfo();
+  static void delInfo();
 };
 
 #endif // SMOLGAME_INPUTHANDLE_H
