@@ -20,16 +20,16 @@ public:
     static float CameraSensitivity;
   };
 
-  typedef struct {
-    double hp;
-    Vector3 pos;
-    Vector3 velocity;
-    float height;
-    bool isGrounded;
+  struct Player {
+    static double hp;
+    static Vector3 pos;
+    static Vector3 velocity;
+    static float height;
+    static bool isGrounded;
 
-    Model model;
-    Texture2D texture;
-  } Player;
+    static Model model;
+    static Texture2D texture;
+  };
 
   typedef struct {
     bool hostile;
@@ -49,8 +49,8 @@ public:
     bool clicked;
   } ButtonObject;
 
-  static void initCore();
-  static void delCore(); // idk if needed
+  static bool init();
+  static void del(); // idk if needed
 
   // probably move this into another class someday
   static float GetHeightFromTriangle(Vector3 v1, Vector3 v2, Vector3 v3,

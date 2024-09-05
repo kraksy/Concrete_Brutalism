@@ -7,5 +7,9 @@ public:
   Render &operator=(const Render &) = default;
   ~Render() = default;
 
+  static void init();
+
 private:
+  static void LoadShader();
+  static bool debugging;
 };

@@ -29,11 +29,23 @@ public:
   static bool init();
   static void HandleInput();
 
+  // experimental
+  // I dont think I will implement mobile port
+
+  static void HandleControllerInput();
+  static void HandleMobileInput();
+
+  typedef struct TouchInfo {
+    int x;
+    int y;
+  } Tinfo;
+  static void getTouch();
+
 private:
   typedef struct MouseInfo {
     float yaw;
     float pitch;
-  } info;
+  } Minfo;
   static MouseInfo getInfo();
   static void delInfo();
 };

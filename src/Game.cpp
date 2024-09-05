@@ -1,22 +1,21 @@
-//
-// Created by kraks on 02/09/2024.
-//
 
 #include "Game.h"
 #include "raylib.h"
 
-#include "Core.h"
-
 #include "Camera.h"
+#include "Core.h"
 #include "InputHandle.h"
+#include "Player.h"
 
 Game::Game() = default;
 Game::~Game() = default;
 
 bool Game::init() {
-  Core::initCore();
-  InputHandle::init();
-  CBCamera::init();
+  if (Core::init()) {
+    Player::init();
+    InputHandle::init();
+    CBCamera::init();
+  }
   return true;
 }
 
@@ -27,6 +26,7 @@ void Game::run() {
 
 void Game::exit() {
   CloseWindow();
-  Core::delCore();
+  Player::del();
+  Core::del();
   CBCamera::del();
 }
