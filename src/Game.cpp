@@ -5,13 +5,16 @@
 #include "Camera.h"
 #include "Core.h"
 #include "InputHandle.h"
+#include "ModelLoad.h"
 #include "Player.h"
 
 Game::Game() = default;
 Game::~Game() = default;
 
+// load all data
 bool Game::init() {
   if (Core::init()) {
+    static Model base = ModelLoad::load("resources/meshes/base.obj");
     Player::init();
     InputHandle::init();
     CBCamera::init();
@@ -19,11 +22,13 @@ bool Game::init() {
   return true;
 }
 
+// rendering operations
 void Game::run() {
   BeginDrawing();
   EndDrawing();
 }
 
+// unload all data and exit
 void Game::exit() {
   CloseWindow();
   Player::del();
