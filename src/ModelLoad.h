@@ -15,6 +15,7 @@ public:
   static Texture2D loadTexture(const char path);
 
   static bool finilizeModel(Model mod, Texture2D tex);
+  static void delModel(Model mod);
 
 private:
 };

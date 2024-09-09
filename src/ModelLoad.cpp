@@ -48,3 +48,13 @@ static bool finilizeModel(Model mod, Texture2D tex) {
   }
   exit(-1);
 }
+
+static void delModel(Model mod) {
+  if (mod.meshCount == 0 || mod.materialCount == 0) {
+    throw std::invalid_argument("model is not valid");
+    exit(-1);
+  } else {
+    UnloadModel(mod);
+  }
+  exit(-1);
+}
