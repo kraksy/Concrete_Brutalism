@@ -8,15 +8,28 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-        src/testing.cpp
-        src/inputs.cpp
-        src/inputs.h
-        src/Core.cpp
-        src/Core.h
-        src/main.cpp
-        src/Game.cpp
-        src/InputHandle.h
-        src/InputHandle.cpp
+    src/Camera.cpp
+    src/Camera.h
+    src/Core.cpp
+    src/Core.h
+    src/ErrorHandle.cpp
+    src/ErrorHandle.h
+    src/Game.cpp
+    src/Game.h
+    src/InputHandle.cpp
+    src/InputHandle.h
+    src/MemoryHandle.cpp
+    src/MemoryHandle.h
+    src/ModelLoad.cpp
+    src/ModelLoad.h
+    src/Player.cpp
+    src/Player.h
+    src/Render.cpp
+    src/Render.h
+    src/Shaders.cpp
+    src/Shaders.h
+    src/main.cpp
+    src/testing.cpp
 )
 
 include(FetchContent)

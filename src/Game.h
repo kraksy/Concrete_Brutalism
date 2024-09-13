@@ -4,11 +4,12 @@
 
 class Game {
 public:
-    Game();
-    ~Game();
-    static bool init();
-    static void run();
-    static void exit();
+  Game();
+  ~Game();
+  static bool init();
+  static void run();
+  static void exit();
+  static bool loadModels();
 };
 
-#endif //SMOLGAME_GAME_H
+#endif // SMOLGAME_GAME_H

@@ -15,18 +15,23 @@ Game::~Game() = default;
 // load all data
 bool Game::init() {
   if (Core::init()) {
-    static Model base = ModelLoad::loadMesh("resources/meshes/base.obj  ");
-    static Model button = ModelLoad::loadMesh("resources/meshes/testing.obj");
+    InitWindow(1200, 1200, "CB");
+    SetConfigFlags(FLAG_MSAA_4X_HINT);
+    CBCamera::init();
     Player::init();
     InputHandle::init();
-    CBCamera::init();
+    SetTargetFPS(60);
+    DisableCursor();
     Render::init();
   }
   return true;
 }
 
 // rendering operations
-void Game::run() { Render::startRendering(); }
+void Game::run() {
+  Render::startRendering();
+  InputHandle::HandleInput();
+}
 
 // unload all data and exit
 void Game::exit() {
@@ -34,4 +39,10 @@ void Game::exit() {
   Player::del();
   Core::del();
   CBCamera::del();
+}
+
+static bool loadModels() {
+  // load modells and textures
+  // static Model base = ModelLoad::loadMesh('resources/meshes/base.obj');
+  return false;
 }

@@ -10,8 +10,12 @@ public:
   Shaders &operator=(const Shaders &) = default;
   ~Shaders();
 
-  static void LoadShader(const char *path);
-  static void UnloadShader(Shaders shad);
+  Shader ShaderList[1];
+
+  static void ConnectShader(const char *path);
+  static void DisconnectShader(Shader shad);
 
 private:
+  static int GetShadeListPos();
+  static void ClearShaderList();
 };

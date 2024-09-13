@@ -20,17 +20,6 @@ public:
     static float CameraSensitivity;
   };
 
-  struct Player {
-    static double hp;
-    static Vector3 pos;
-    static Vector3 velocity;
-    static float height;
-    static bool isGrounded;
-
-    static Model model;
-    static Texture2D texture;
-  };
-
   typedef struct {
     bool hostile;
     double hp;
