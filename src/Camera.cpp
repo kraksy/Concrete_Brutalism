@@ -2,6 +2,8 @@
 #include "Camera.h"
 #include <raylib.h>
 
+Camera CBCamera::cam;
+
 void init() {
   CBCamera::cam.position = (Vector3){0.0f, 0.0f, 0.0f};
   CBCamera::cam.target = (Vector3){0.0f, 0.0f, 0.0f};

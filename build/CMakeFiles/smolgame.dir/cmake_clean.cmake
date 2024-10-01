@@ -21,8 +21,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/smolgame.dir/src/Shaders.cpp.o.d"
   "CMakeFiles/smolgame.dir/src/main.cpp.o"
   "CMakeFiles/smolgame.dir/src/main.cpp.o.d"
-  "CMakeFiles/smolgame.dir/src/testing.cpp.o"
-  "CMakeFiles/smolgame.dir/src/testing.cpp.o.d"
   "smolgame"
   "smolgame.pdb"
 )

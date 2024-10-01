@@ -510,30 +510,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smolgame.dir/build.make CMakeFiles/smolgame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/testing.o: src/testing.cpp.o
-.PHONY : src/testing.o
-
-# target to build an object file
-src/testing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smolgame.dir/build.make CMakeFiles/smolgame.dir/src/testing.cpp.o
-.PHONY : src/testing.cpp.o
-
-src/testing.i: src/testing.cpp.i
-.PHONY : src/testing.i
-
-# target to preprocess a source file
-src/testing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smolgame.dir/build.make CMakeFiles/smolgame.dir/src/testing.cpp.i
-.PHONY : src/testing.cpp.i
-
-src/testing.s: src/testing.cpp.s
-.PHONY : src/testing.s
-
-# target to generate assembly for a file
-src/testing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smolgame.dir/build.make CMakeFiles/smolgame.dir/src/testing.cpp.s
-.PHONY : src/testing.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -586,9 +562,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/testing.o"
-	@echo "... src/testing.i"
-	@echo "... src/testing.s"
 .PHONY : help
 
 

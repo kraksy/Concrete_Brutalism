@@ -10,16 +10,6 @@
 
 class Core {
 public:
-  struct GameConfig {
-    static int ScreenWidth;
-    static int ScreenHeight;
-    static float Gravity;
-    static float PlayerJumpSpeed;
-    static float PlayerSpeed;
-    static float PlayerEyeHeight;
-    static float CameraSensitivity;
-  };
-
   typedef struct {
     bool hostile;
     double hp;
@@ -39,9 +29,7 @@ public:
   } ButtonObject;
 
   static bool init();
-  static void del(); // idk if needed
 
-  // probably move this into another class someday
   static float GetHeightFromTriangle(Vector3 v1, Vector3 v2, Vector3 v3,
                                      Vector3 pos);
   static float GetTerrainHeightAtPosition(Vector3 pos, Model terrain,

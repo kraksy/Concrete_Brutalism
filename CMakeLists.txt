@@ -29,7 +29,6 @@ set(SOURCES
     src/Shaders.cpp
     src/Shaders.h
     src/main.cpp
-    src/testing.cpp
 )
 
 include(FetchContent)

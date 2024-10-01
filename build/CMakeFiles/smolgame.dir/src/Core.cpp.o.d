@@ -73,4 +73,5 @@ CMakeFiles/smolgame.dir/src/Core.cpp.o: \
  /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc \
  /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
  /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
- /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc
+ /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
+ /home/marcel/code/cpp/Concrete_Brutalism/src/GameConfig.h

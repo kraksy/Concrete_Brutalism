@@ -3,15 +3,16 @@
 //
 
 #include "Core.h"
+#include "GameConfig.h"
 
-static void initCore() {
-  Core::GameConfig::ScreenHeight = 1200;
-  Core::GameConfig::ScreenWidth = 1200;
-  Core::GameConfig::PlayerEyeHeight = 2.0f;
-  Core::GameConfig::PlayerJumpSpeed = 4.0f;
-  Core::GameConfig::PlayerSpeed = 5.0f;
-  Core::GameConfig::Gravity = 9.81;
-  Core::GameConfig::CameraSensitivity = 0.003f;
+static void init() {
+  GameConfig::ScreenHeight = 1200;
+  GameConfig::ScreenWidth = 1200;
+  GameConfig::PlayerEyeHeight = 2.0f;
+  GameConfig::PlayerJumpSpeed = 4.0f;
+  GameConfig::PlayerSpeed = 5.0f;
+  GameConfig::Gravity = 9.81;
+  GameConfig::CameraSensitivity = 0.003f;
 }
 
 static float GetHeightFromTriangle(Vector3 v1, Vector3 v2, Vector3 v3,
@@ -32,9 +33,9 @@ static float GetTerrainHeightAtPosition(Vector3 pos, Model terrain,
     Vector3 v3 = Vector3Scale(vertices[i + 2], scale);
 
     if (CheckCollisionPointTriangle(
-            (Vector2){position.x, position.z}, (Vector2){v1.x, v1.z},
+            (Vector2){pos.x, pos.z}, (Vector2){v1.x, v1.z},
             (Vector2){v2.x, v2.z}, (Vector2){v3.x, v3.z})) {
-      float height = GetHeightFromTriangle(v1, v2, v3, position);
+      float height = GetHeightFromTriangle(v1, v2, v3, pos);
       return height;
     }
   }

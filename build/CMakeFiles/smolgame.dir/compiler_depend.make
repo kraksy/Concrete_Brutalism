@@ -111,6 +111,7 @@ CMakeFiles/smolgame.dir/src/Core.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism
   _deps/raylib-src/src/raylib.h \
   _deps/raylib-src/src/raymath.h \
   /home/marcel/code/cpp/Concrete_Brutalism/src/Core.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/GameConfig.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -331,7 +332,9 @@ CMakeFiles/smolgame.dir/src/InputHandle.cpp.o: /home/marcel/code/cpp/Concrete_Br
   _deps/raylib-src/src/raylib.h \
   _deps/raylib-src/src/raymath.h \
   /home/marcel/code/cpp/Concrete_Brutalism/src/Core.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/GameConfig.h \
   /home/marcel/code/cpp/Concrete_Brutalism/src/InputHandle.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Player.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -433,233 +436,769 @@ CMakeFiles/smolgame.dir/src/InputHandle.cpp.o: /home/marcel/code/cpp/Concrete_Br
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h
 
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Player.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Game.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/features.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/14.1.1/type_traits:
-
-/usr/include/c++/14.1.1/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/14.1.1/tr1/hypergeometric.tcc:
-
-/usr/include/c++/14.1.1/tr1/gamma.tcc:
-
-/usr/include/c++/14.1.1/tr1/exp_integral.tcc:
-
-/usr/include/c++/14.1.1/tr1/beta_function.tcc:
-
-/usr/include/c++/14.1.1/tr1/bessel_function.tcc:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/ErrorHandle.cpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h:
-
-/usr/include/c++/14.1.1/pstl/pstl_config.h:
-
-/usr/include/c++/14.1.1/math.h:
-
-/usr/include/c++/14.1.1/ext/type_traits.h:
-
-/usr/include/c++/14.1.1/ext/numeric_traits.h:
-
-/usr/include/c++/14.1.1/debug/debug.h:
-
-/usr/include/c++/14.1.1/limits:
-
-/usr/include/c++/14.1.1/cmath:
-
-/usr/include/c++/14.1.1/bits/version.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/InputHandle.cpp:
-
-/usr/include/c++/14.1.1/bits/stl_pair.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/14.1.1/bits/stl_iterator.h:
-
-/usr/include/c++/14.1.1/bits/stl_algobase.h:
-
-/usr/include/c++/14.1.1/bits/std_abs.h:
-
-/usr/include/c++/14.1.1/tr1/ell_integral.tcc:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/14.1.1/bits/functexcept.h:
-
-/usr/include/bits/math-vector.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/InputHandle.h:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/c++/14.1.1/tr1/poly_hermite.tcc:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/c++/14.1.1/bit:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/math.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/byteswap.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Game.cpp:
-
-/usr/include/bits/time64.h:
-
-/usr/include/sys/select.h:
-
-_deps/raylib-src/src/raymath.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/c++/14.1.1/tr1/special_function_util.h:
-
-/usr/include/c++/14.1.1/concepts:
-
-/usr/include/c++/14.1.1/bits/ptr_traits.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Render.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-_deps/raylib-src/src/raylib.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/ModelLoad.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Camera.cpp:
-
-/usr/include/c++/14.1.1/bits/exception_defines.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/ErrorHandle.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/c++/14.1.1/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/14.1.1/debug/assertions.h:
-
-/usr/include/bits/fp-fast.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Core.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/14.1.1/bits/predefined_ops.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/c++/14.1.1/bits/stl_iterator_base_types.h:
-
-/usr/include/bits/flt-eval-method.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Core.cpp:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/14.1.1/bits/move.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/14.1.1/tr1/legendre_function.tcc:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/c++/14.1.1/bits/concept_check.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/14.1.1/bits/cpp_type_traits.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/c++/14.1.1/bits/specfun.h:
-
-/home/marcel/code/cpp/Concrete_Brutalism/src/Camera.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/14.1.1/bits/utility.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h:
+CMakeFiles/smolgame.dir/src/MemoryHandle.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/MemoryHandle.cpp \
+  /usr/include/stdc-predef.h
+
+CMakeFiles/smolgame.dir/src/ModelLoad.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/ModelLoad.cpp \
+  _deps/raylib-src/src/raylib.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/ModelLoad.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14.1.1/backward/binders.h \
+  /usr/include/c++/14.1.1/bit \
+  /usr/include/c++/14.1.1/bits/alloc_traits.h \
+  /usr/include/c++/14.1.1/bits/allocator.h \
+  /usr/include/c++/14.1.1/bits/basic_string.h \
+  /usr/include/c++/14.1.1/bits/basic_string.tcc \
+  /usr/include/c++/14.1.1/bits/char_traits.h \
+  /usr/include/c++/14.1.1/bits/charconv.h \
+  /usr/include/c++/14.1.1/bits/concept_check.h \
+  /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/14.1.1/bits/cxxabi_forced.h \
+  /usr/include/c++/14.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.1.1/bits/exception.h \
+  /usr/include/c++/14.1.1/bits/exception_defines.h \
+  /usr/include/c++/14.1.1/bits/exception_ptr.h \
+  /usr/include/c++/14.1.1/bits/functexcept.h \
+  /usr/include/c++/14.1.1/bits/functional_hash.h \
+  /usr/include/c++/14.1.1/bits/hash_bytes.h \
+  /usr/include/c++/14.1.1/bits/invoke.h \
+  /usr/include/c++/14.1.1/bits/localefwd.h \
+  /usr/include/c++/14.1.1/bits/memory_resource.h \
+  /usr/include/c++/14.1.1/bits/memoryfwd.h \
+  /usr/include/c++/14.1.1/bits/move.h \
+  /usr/include/c++/14.1.1/bits/nested_exception.h \
+  /usr/include/c++/14.1.1/bits/new_allocator.h \
+  /usr/include/c++/14.1.1/bits/ostream_insert.h \
+  /usr/include/c++/14.1.1/bits/postypes.h \
+  /usr/include/c++/14.1.1/bits/predefined_ops.h \
+  /usr/include/c++/14.1.1/bits/ptr_traits.h \
+  /usr/include/c++/14.1.1/bits/range_access.h \
+  /usr/include/c++/14.1.1/bits/refwrap.h \
+  /usr/include/c++/14.1.1/bits/requires_hosted.h \
+  /usr/include/c++/14.1.1/bits/std_abs.h \
+  /usr/include/c++/14.1.1/bits/stl_algobase.h \
+  /usr/include/c++/14.1.1/bits/stl_construct.h \
+  /usr/include/c++/14.1.1/bits/stl_function.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/string_view.tcc \
+  /usr/include/c++/14.1.1/bits/stringfwd.h \
+  /usr/include/c++/14.1.1/bits/uses_allocator.h \
+  /usr/include/c++/14.1.1/bits/uses_allocator_args.h \
+  /usr/include/c++/14.1.1/bits/utility.h \
+  /usr/include/c++/14.1.1/bits/version.h \
+  /usr/include/c++/14.1.1/cctype \
+  /usr/include/c++/14.1.1/cerrno \
+  /usr/include/c++/14.1.1/clocale \
+  /usr/include/c++/14.1.1/concepts \
+  /usr/include/c++/14.1.1/cstddef \
+  /usr/include/c++/14.1.1/cstdio \
+  /usr/include/c++/14.1.1/cstdlib \
+  /usr/include/c++/14.1.1/cwchar \
+  /usr/include/c++/14.1.1/debug/assertions.h \
+  /usr/include/c++/14.1.1/debug/debug.h \
+  /usr/include/c++/14.1.1/exception \
+  /usr/include/c++/14.1.1/ext/alloc_traits.h \
+  /usr/include/c++/14.1.1/ext/numeric_traits.h \
+  /usr/include/c++/14.1.1/ext/string_conversions.h \
+  /usr/include/c++/14.1.1/ext/type_traits.h \
+  /usr/include/c++/14.1.1/initializer_list \
+  /usr/include/c++/14.1.1/iosfwd \
+  /usr/include/c++/14.1.1/new \
+  /usr/include/c++/14.1.1/pstl/pstl_config.h \
+  /usr/include/c++/14.1.1/stdexcept \
+  /usr/include/c++/14.1.1/string \
+  /usr/include/c++/14.1.1/string_view \
+  /usr/include/c++/14.1.1/tuple \
+  /usr/include/c++/14.1.1/type_traits \
+  /usr/include/c++/14.1.1/typeinfo \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h
+
+CMakeFiles/smolgame.dir/src/Player.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/Player.cpp \
+  _deps/raylib-src/src/raylib.h \
+  _deps/raylib-src/src/raymath.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Core.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Player.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14.1.1/bit \
+  /usr/include/c++/14.1.1/bits/concept_check.h \
+  /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/14.1.1/bits/exception_defines.h \
+  /usr/include/c++/14.1.1/bits/functexcept.h \
+  /usr/include/c++/14.1.1/bits/move.h \
+  /usr/include/c++/14.1.1/bits/predefined_ops.h \
+  /usr/include/c++/14.1.1/bits/ptr_traits.h \
+  /usr/include/c++/14.1.1/bits/requires_hosted.h \
+  /usr/include/c++/14.1.1/bits/specfun.h \
+  /usr/include/c++/14.1.1/bits/std_abs.h \
+  /usr/include/c++/14.1.1/bits/stl_algobase.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/utility.h \
+  /usr/include/c++/14.1.1/bits/version.h \
+  /usr/include/c++/14.1.1/cmath \
+  /usr/include/c++/14.1.1/concepts \
+  /usr/include/c++/14.1.1/debug/assertions.h \
+  /usr/include/c++/14.1.1/debug/debug.h \
+  /usr/include/c++/14.1.1/ext/numeric_traits.h \
+  /usr/include/c++/14.1.1/ext/type_traits.h \
+  /usr/include/c++/14.1.1/limits \
+  /usr/include/c++/14.1.1/math.h \
+  /usr/include/c++/14.1.1/pstl/pstl_config.h \
+  /usr/include/c++/14.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/14.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/14.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/14.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/14.1.1/tr1/gamma.tcc \
+  /usr/include/c++/14.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/14.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14.1.1/tr1/special_function_util.h \
+  /usr/include/c++/14.1.1/type_traits \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h
+
+CMakeFiles/smolgame.dir/src/Render.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/Render.cpp \
+  _deps/raylib-src/src/raylib.h \
+  _deps/raylib-src/src/raymath.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Camera.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Core.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Render.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/14.1.1/bit \
+  /usr/include/c++/14.1.1/bits/concept_check.h \
+  /usr/include/c++/14.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/14.1.1/bits/exception_defines.h \
+  /usr/include/c++/14.1.1/bits/functexcept.h \
+  /usr/include/c++/14.1.1/bits/move.h \
+  /usr/include/c++/14.1.1/bits/predefined_ops.h \
+  /usr/include/c++/14.1.1/bits/ptr_traits.h \
+  /usr/include/c++/14.1.1/bits/requires_hosted.h \
+  /usr/include/c++/14.1.1/bits/specfun.h \
+  /usr/include/c++/14.1.1/bits/std_abs.h \
+  /usr/include/c++/14.1.1/bits/stl_algobase.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14.1.1/bits/stl_pair.h \
+  /usr/include/c++/14.1.1/bits/utility.h \
+  /usr/include/c++/14.1.1/bits/version.h \
+  /usr/include/c++/14.1.1/cmath \
+  /usr/include/c++/14.1.1/concepts \
+  /usr/include/c++/14.1.1/debug/assertions.h \
+  /usr/include/c++/14.1.1/debug/debug.h \
+  /usr/include/c++/14.1.1/ext/numeric_traits.h \
+  /usr/include/c++/14.1.1/ext/type_traits.h \
+  /usr/include/c++/14.1.1/limits \
+  /usr/include/c++/14.1.1/math.h \
+  /usr/include/c++/14.1.1/pstl/pstl_config.h \
+  /usr/include/c++/14.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/14.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/14.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/14.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/14.1.1/tr1/gamma.tcc \
+  /usr/include/c++/14.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/14.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14.1.1/tr1/special_function_util.h \
+  /usr/include/c++/14.1.1/type_traits \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h
+
+CMakeFiles/smolgame.dir/src/Shaders.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/Shaders.cpp \
+  _deps/raylib-src/src/raylib.h \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Shaders.h \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h
+
+CMakeFiles/smolgame.dir/src/main.cpp.o: /home/marcel/code/cpp/Concrete_Brutalism/src/main.cpp \
+  /home/marcel/code/cpp/Concrete_Brutalism/src/Game.h \
+  /usr/include/stdc-predef.h
+
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/main.cpp:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Shaders.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Render.cpp:
+
+/usr/include/stdio.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/errno.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/14.1.1/typeinfo:
+
+/usr/include/c++/14.1.1/string_view:
+
+/usr/include/c++/14.1.1/new:
+
+/usr/include/c++/14.1.1/iosfwd:
+
+/usr/include/c++/14.1.1/initializer_list:
+
+/usr/include/c++/14.1.1/ext/string_conversions.h:
+
+/usr/include/c++/14.1.1/cwchar:
+
+/usr/include/c++/14.1.1/cstdlib:
+
+/usr/include/c++/14.1.1/bits/uses_allocator.h:
+
+/usr/include/c++/14.1.1/bits/string_view.tcc:
+
+/usr/include/c++/14.1.1/bits/stl_function.h:
+
+/usr/include/c++/14.1.1/bits/stl_construct.h:
+
+/usr/include/c++/14.1.1/bits/refwrap.h:
+
+/usr/include/c++/14.1.1/bits/range_access.h:
+
+/usr/include/c++/14.1.1/bits/new_allocator.h:
+
+/usr/include/c++/14.1.1/bits/nested_exception.h:
+
+/usr/include/c++/14.1.1/bits/memoryfwd.h:
+
+/usr/include/c++/14.1.1/cctype:
+
+/usr/include/c++/14.1.1/bits/hash_bytes.h:
+
+/usr/include/c++/14.1.1/bits/functional_hash.h:
+
+/usr/include/c++/14.1.1/bits/exception.h:
+
+/usr/include/c++/14.1.1/bits/memory_resource.h:
+
+/usr/include/c++/14.1.1/bits/cxxabi_init_exception.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Shaders.cpp:
+
+/usr/include/c++/14.1.1/bits/charconv.h:
+
+/usr/include/c++/14.1.1/bits/char_traits.h:
+
+/usr/include/c++/14.1.1/bits/basic_string.h:
+
+/usr/include/c++/14.1.1/bits/allocator.h:
+
+/usr/include/c++/14.1.1/backward/binders.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
+/usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/c++/14.1.1/clocale:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/c++/14.1.1/cstddef:
+
+/usr/include/c++/14.1.1/bits/utility.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Camera.h:
+
+/usr/include/c++/14.1.1/stdexcept:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/c++/14.1.1/bits/specfun.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/c++/14.1.1/string:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/14.1.1/bits/concept_check.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/14.1.1/tr1/legendre_function.tcc:
+
+/usr/include/c++/14.1.1/bits/uses_allocator_args.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/14.1.1/bits/move.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/bits/types/time_t.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Core.cpp:
+
+/usr/include/c++/14.1.1/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/14.1.1/bits/invoke.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/c++/14.1.1/bits/cxxabi_forced.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/asm/errno.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Player.cpp:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Core.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/c++/14.1.1/debug/assertions.h:
+
+/usr/include/c++/14.1.1/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/14.1.1/bits/exception_ptr.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/ErrorHandle.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/c++/14.1.1/bits/stringfwd.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/14.1.1/bits/exception_defines.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Render.h:
+
+/usr/include/c++/14.1.1/bits/localefwd.h:
+
+/usr/include/c++/14.1.1/bits/ptr_traits.h:
+
+/usr/include/c++/14.1.1/bits/alloc_traits.h:
+
+/usr/include/c++/14.1.1/concepts:
+
+/usr/include/c++/14.1.1/tr1/special_function_util.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+_deps/raylib-src/src/raymath.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Game.cpp:
+
+/usr/include/c++/14.1.1/bits/cpp_type_traits.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/c++/14.1.1/cerrno:
+
+/usr/include/math.h:
+
+_deps/raylib-src/src/raylib.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/14.1.1/tr1/poly_hermite.tcc:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/InputHandle.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/c++/14.1.1/exception:
+
+/usr/include/c++/14.1.1/bits/functexcept.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/14.1.1/bits/predefined_ops.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/ModelLoad.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/14.1.1/tr1/ell_integral.tcc:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/c++/14.1.1/bits/std_abs.h:
+
+/usr/include/c++/14.1.1/bits/stl_algobase.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
 /usr/include/c++/14.1.1/bits/requires_hosted.h:
+
+/usr/include/c++/14.1.1/bits/stl_iterator.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/14.1.1/bits/stl_pair.h:
+
+/usr/include/locale.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Camera.cpp:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/InputHandle.cpp:
+
+/usr/include/c++/14.1.1/bits/version.h:
+
+/usr/include/c++/14.1.1/cmath:
+
+/usr/include/c++/14.1.1/cstdio:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/14.1.1/limits:
+
+/usr/include/c++/14.1.1/debug/debug.h:
+
+/usr/include/c++/14.1.1/ext/numeric_traits.h:
+
+/usr/include/c++/14.1.1/ext/type_traits.h:
+
+/usr/include/c++/14.1.1/math.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/ErrorHandle.cpp:
+
+/usr/include/c++/14.1.1/tr1/bessel_function.tcc:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/14.1.1/tr1/beta_function.tcc:
+
+/usr/include/c++/14.1.1/tr1/exp_integral.tcc:
+
+/usr/include/c++/14.1.1/tuple:
+
+/usr/include/c++/14.1.1/tr1/gamma.tcc:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/14.1.1/tr1/hypergeometric.tcc:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/14.1.1/pstl/pstl_config.h:
+
+/usr/include/c++/14.1.1/tr1/poly_laguerre.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h:
+
+/usr/include/c++/14.1.1/type_traits:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/14.1.1/ext/alloc_traits.h:
+
+/usr/include/c++/14.1.1/bits/postypes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/features.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/GameConfig.h:
+
+/usr/include/c++/14.1.1/bits/ostream_insert.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Game.h:
+
+/usr/include/c++/14.1.1/bits/basic_string.tcc:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/Player.h:
+
+/usr/include/c++/14.1.1/bit:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/MemoryHandle.cpp:
+
+/usr/include/sys/cdefs.h:
+
+/home/marcel/code/cpp/Concrete_Brutalism/src/ModelLoad.cpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/bits/locale.h:

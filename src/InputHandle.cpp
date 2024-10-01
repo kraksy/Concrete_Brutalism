@@ -1,6 +1,7 @@
 
 #include "InputHandle.h"
-#include "Core.h"
+#include "GameConfig.h"
+#include "Player.h"
 
 bool InputHandle::init() {
   InputPreset::interact = KEY_E;
@@ -26,10 +27,10 @@ void InputHandle::HandleInput() {
     InputHandle::moveDirections =
         Vector3Add(InputHandle::moveDirections, InputHandle::right);
   // Jumping
-  if (IsKeyPressed(InputPreset::jump) && player.isGrounded) {
-    player.velocity.y =
-        Core::GameConfig::PlayerJumpSpeed; // Apply upward velocity
-    player.isGrounded = false;             // Player is no longer on the ground
+  if (IsKeyPressed(InputPreset::jump) && Player::player::isGrounded) {
+    Player::player::velocity.y =
+        GameConfig::PlayerJumpSpeed;    // Apply upward velocity
+    Player::player::isGrounded = false; // Player is no longer on the ground
   }
   if (IsKeyPressed(InputPreset::interact)) {
   }

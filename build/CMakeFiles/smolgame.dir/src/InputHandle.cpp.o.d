@@ -75,4 +75,5 @@ CMakeFiles/smolgame.dir/src/InputHandle.cpp.o: \
  /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
  /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
+ /home/marcel/code/cpp/Concrete_Brutalism/src/GameConfig.h \
  /home/marcel/code/cpp/Concrete_Brutalism/src/Player.h

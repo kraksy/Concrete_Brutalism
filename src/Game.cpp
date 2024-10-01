@@ -37,7 +37,6 @@ void Game::run() {
 void Game::exit() {
   CloseWindow();
   Player::del();
-  Core::del();
   CBCamera::del();
 }
 

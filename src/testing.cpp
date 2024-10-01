@@ -3,7 +3,6 @@
 //
 
 #include "Core.h"
-#include "inputs.h"
 #include "raymath.h"
 #include <iostream>
 #include <raylib.h>
