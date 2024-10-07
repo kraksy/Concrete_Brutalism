@@ -4,12 +4,12 @@
 #include "Player.h"
 
 bool InputHandle::init() {
-  InputPreset::interact = KEY_E;
-  InputPreset::jump = KEY_SPACE;
-  InputPreset::right = KEY_D;
-  InputPreset::left = KEY_A;
-  InputPreset::forward = KEY_W;
-  InputPreset::back = KEY_S;
+  InputHandle::InputPreset::interact = KEY_E;
+  InputHandle::InputPreset::jump = KEY_SPACE;
+  InputHandle::InputPreset::right = KEY_D;
+  InputHandle::InputPreset::left = KEY_A;
+  InputHandle::InputPreset::forward = KEY_W;
+  InputHandle::InputPreset::back = KEY_S;
   return true;
 }
 

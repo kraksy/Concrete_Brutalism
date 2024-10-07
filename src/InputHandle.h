@@ -2,9 +2,6 @@
 // Created by kraks on 02/09/2024.
 //
 
-#ifndef SMOLGAME_INPUTHANDLE_H
-#define SMOLGAME_INPUTHANDLE_H
-
 #include "Core.h"
 #include "raymath.h"
 #include <raylib.h>
@@ -18,7 +15,7 @@ public:
     static KeyboardKey right;
     static KeyboardKey jump;
     static KeyboardKey interact;
-  };
+  } PlayerPreset;
 
   static bool grounded;
   static Vector2 mouseDelta; // mouse data
@@ -49,5 +46,3 @@ private:
   static MouseInfo getInfo();
   static void delInfo();
 };
-
-#endif // SMOLGAME_INPUTHANDLE_H
