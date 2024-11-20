@@ -3,20 +3,25 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
+# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
+# would cause a fatal error, even though it would be a no-op.
+if(NOT EXISTS "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-src")
+  file(MAKE_DIRECTORY "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-src")
+endif()
 file(MAKE_DIRECTORY
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-src"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-build"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/tmp"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src"
-  "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-build"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/tmp"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src"
+  "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp"
 )
 
-set(configSubDirs )
+set(configSubDirs Debug)
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/marcel/code/cpp/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/kraks/Desktop/Concrete_Brutalism/build/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

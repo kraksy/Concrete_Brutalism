@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(smolgame VERSION 0.1)
+project(Concrete_Brutalism VERSION 0.1)
 
 cmake_policy(SET CMP0135 NEW)
 
@@ -8,27 +8,15 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-    src/Camera.cpp
-    src/Camera.h
-    src/Core.cpp
-    src/Core.h
-    src/ErrorHandle.cpp
-    src/ErrorHandle.h
-    src/Game.cpp
-    src/Game.h
-    src/InputHandle.cpp
-    src/InputHandle.h
-    src/MemoryHandle.cpp
-    src/MemoryHandle.h
-    src/ModelLoad.cpp
-    src/ModelLoad.h
-    src/Player.cpp
-    src/Player.h
-    src/Render.cpp
-    src/Render.h
-    src/Shaders.cpp
-    src/Shaders.h
     src/main.cpp
+    src/comp/Input.cpp
+    src/comp/Input.h
+    src/comp/Render.cpp
+    src/comp/Render.h
+    src/entities/Player.h
+    src/utils/Utils.cpp
+    src/utils/Utils.h
+    src/Game.cpp
 )
 
 include(FetchContent)
@@ -42,6 +30,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(raylib)
 
-add_executable(smolgame ${SOURCES})
+add_executable(Concrete_Brutalism ${SOURCES})
 
-target_link_libraries(smolgame PRIVATE raylib)
+target_link_libraries(Concrete_Brutalism PRIVATE raylib)

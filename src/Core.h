@@ -5,15 +5,9 @@
 
 class Core
 {
-public:
-    Core(/* args */);
-    ~Core();
+    Core();
+    ~Core() = default;
 };
 
-Core::Core(/* args */)
-{
-}
-
-Core::~Core()
-{
-}
+Core::Core()
+= default;

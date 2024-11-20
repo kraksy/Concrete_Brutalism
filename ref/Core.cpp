@@ -4,6 +4,8 @@
 
 #include "Core.h"
 #include "GameConfig.h"
+#include "../src/Core.h"
+
 
 static void init() {
   GameConfig::ScreenHeight = 1200;
@@ -40,4 +42,8 @@ static float GetTerrainHeightAtPosition(Vector3 pos, Model terrain,
     }
   }
   return 0.0f;
+}
+
+Core::Core() {
+
 }

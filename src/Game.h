@@ -4,25 +4,25 @@
 
 #pragma once
 
-#include "Core.h"
-
 class Game
 {
 public:
     Game();
-    ~Game();
+    ~Game() = default;
     void run();
     void end();
     void Update(); // game logic
+    enum GameState
+    {
+        GAME,
+        MENU,
+        LOADING,
+        SETTINGS,
+    }State;
 };
 
 Game::Game()
-{
-}
-
-Game::~Game()
-{
-}
+= default;
 
 void Game::run()
 {
@@ -31,6 +31,10 @@ void Game::run()
 
 void Game::end()
 {
+
+}
+
+void Game::Update() {
 
 }
 

@@ -1,5 +1,5 @@
 
-#include <Core.h>
+#include "Core.h"
 #include "Game.h"
 
 int main()
@@ -7,16 +7,19 @@ int main()
     static int running;
 
     Game game;
-    
-    game.State = game.GAME;
+
+
     running = true;
 
     while(running)
     {
         switch (game.State)
         {
-        case game.GAME:
+        case Game::GAME:
             game.run();
+            break;
+        case Game::MENU:
+
             break;
         default:
             break;
