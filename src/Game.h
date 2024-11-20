@@ -1,15 +1,37 @@
 
-#ifndef SMOLGAME_GAME_H
-#define SMOLGAME_GAME_H
+#ifndef CB_GAME_H
+#define CB_GAME_H
 
-class Game {
+#pragma once
+
+#include "Core.h"
+
+class Game
+{
 public:
-  Game();
-  ~Game();
-  static bool init();
-  static void run();
-  static void exit();
-  static bool loadModels();
+    Game();
+    ~Game();
+    void run();
+    void end();
+    void Update(); // game logic
 };
 
-#endif // SMOLGAME_GAME_H
+Game::Game()
+{
+}
+
+Game::~Game()
+{
+}
+
+void Game::run()
+{
+    
+}
+
+void Game::end()
+{
+
+}
+
+#endif // CB_GAME_H
