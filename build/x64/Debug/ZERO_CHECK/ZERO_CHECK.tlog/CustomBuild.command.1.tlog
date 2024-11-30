@@ -1,0 +1,10 @@
+^C:\USERS\KRAKS\DESKTOP\CONCRETE_BRUTALISM\BUILD\CMAKEFILES\195E9D2B8FF04C24921E8B339F3751F0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kraks/Desktop/Concrete_Brutalism -BC:/Users/kraks/Desktop/Concrete_Brutalism/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/kraks/Desktop/Concrete_Brutalism/build/smolgame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

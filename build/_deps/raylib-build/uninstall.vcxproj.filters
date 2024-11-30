@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kraks\Desktop\Concrete_Brutalism\build\CMakeFiles\a192ae7b63500d56edebc6bbf7870a19\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kraks\Desktop\Concrete_Brutalism\build\_deps\raylib-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\kraks\Desktop\Concrete_Brutalism\build\_deps\raylib-build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C35B7150-35B6-3CF8-970D-C957CC1C24E3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

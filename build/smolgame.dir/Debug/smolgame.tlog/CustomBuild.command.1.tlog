@@ -1,0 +1,10 @@
+^C:\USERS\KRAKS\DESKTOP\CONCRETE_BRUTALISM\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kraks/Desktop/Concrete_Brutalism -BC:/Users/kraks/Desktop/Concrete_Brutalism/build --check-stamp-file C:/Users/kraks/Desktop/Concrete_Brutalism/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
